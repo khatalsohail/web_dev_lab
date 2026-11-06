@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Tokens Example</title>
+    <style>
+        :root {
+            --color-primary: darkgrey;
+            --color-surface: white;
+            --color-text: black;
+            --font-family: system-ui, sans-serif;
+            --font-size-base: 1rem;
+            --font-weight-bold: 700;
+            --spacing-md: 16px;
+            --border-radius-md: 8px;
+            --border-depth: 2px;
+        }
+        body {
+            font-family: var(--font-family);
+            color: var(--color-text);
+            background-color: #f4f4f4;
+            padding: var(--spacing-md);
+            margin: 0;                   
+            min-height: 100vh;         
+            display: flex;             
+            justify-content: center;   
+            align-items: center;       
+            box-sizing: border-box;
+        }
+        
+        .card {
+            background-color: var(--color-surface);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius-md);
+            border: var(--border-depth) solid var(--color-primary);
+            max-width: 300px;
+            width: 100%;               
+        }
+        
+        .card-title {
+            font-size: calc(var(--font-size-base) * 1.5);
+            font-weight: var(--font-weight-bold);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .btn {
+            background-color: var(--color-primary);
+            color: var(--color-surface);
+            padding: 8px var(--spacing-md);
+            border: none;
+            border-radius: var(--border-radius-md);
+            font-weight: var(--font-weight-bold);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+     <div class="card">
+        <div class="card-title">Token Example</div>
+        <p>This card uses design tokens for its padding, border, and colors.</p>
+        <button class="btn">Action</button>
+     </div>
+
+</body>
+</html>
