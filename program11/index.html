@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    html,body{
+        height: 100%;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+
+    }
+    header{
+        text-decoration: underline;
+        border: 2px solid black;
+        padding: 20px;
+        margin: 20px 300px 20px 300px;
+        text-align: center;
+    }
+    .newspaper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      flex:1;
+    }
+
+    .column {
+      border: 2px solid black; /* Creates vertical column dividers */
+      padding: 20px;
+    }
+    .column h2{
+        text-decoration: underline;
+    }
+    .column p{
+        text-align: center;
+        justify-content: center;
+    }
+    footer{
+        text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <h2>The BST Chronicles</h2>
+        <p>News That Serves You Right!</p>
+    </header>
+
+  <div class="newspaper">
+    <div class="column">
+      <h2>Left Side Bar</h2>
+      <p>This is the first line of this paragraph<br>This is the second line of this paragraph<br>This is the third line of this paragraph<br>This is the fourth line of this paragraph<br>This is the fifth line of this paragraph<br>This is the sixth line of this paragraph<br>This is the seventh line of this paragraph<br>This is the eighth line of this paragraph.</p>
+    </div>
+    <div class="column">
+      <h2>Main</h2>
+      <p>This is the first line of this paragraph<br>This is the second line of this paragraph<br>This is the third line of this paragraph<br>This is the fourth line of this paragraph<br>This is the fifth line of this paragraph<br>This is the sixth line of this paragraph<br>This is the seventh line of this paragraph<br>This is the eighth line of this paragraph.</p>
+    </div>
+    <div class="column">
+      <h2>Right Side Bar </h2>
+      <p>This is the first line of this paragraph<br>This is the second line of this paragraph<br>This is the third line of this paragraph<br>This is the fourth line of this paragraph<br>This is the fifth line of this paragraph<br>This is the sixth line of this paragraph<br>This is the seventh line of this paragraph<br>This is the eighth line of this paragraph.</p>
+    </div>
+  </div>
+<footer>
+    <p>&copy; The BST Chronicles 2026</p>
+</footer>
+</body>
+</html>
